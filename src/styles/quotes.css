@@ -1,0 +1,68 @@
+.quote-card-0 {
+  position: absolute;
+  top: 0;
+  left: 2.875rem;
+}
+
+.quote-card-1 {
+  position: absolute;
+  right: 1.5rem;
+  transform: translate(0, 8rem);
+}
+
+.quote-card-2,
+.quote-card-3 {
+  display: none;
+}
+
+@screen sm {
+  .quote-card-0 {
+    transform: translate(6rem, 0);
+  }
+
+  .quote-card-1 {
+    transform: translate(-6rem, 6rem);
+  }
+}
+
+@screen lg {
+  .quote-card-2,
+  .quote-card-3 {
+    display: block;
+  }
+
+  .quote-card-0 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0rem);
+    margin-left: 5rem;
+  }
+
+  .quote-card-1 {
+    position: absolute;
+    right: unset;
+    transform: translate(0, 10rem);
+  }
+
+  .quote-card-2 {
+    position: absolute;
+    right: 0;
+    transform: translate(0, 15rem);
+  }
+
+  .quote-card-3 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 24rem);
+    margin-left: 0rem;
+  }
+}
+
+.quote-card-hidden {
+  display: none;
+}
+
+.animate__animated.animate__fadeIn,
+.animate__animated.animate__fadeOut {
+  --animate-duration: 1s;
+}

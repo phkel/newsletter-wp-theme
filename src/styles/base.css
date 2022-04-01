@@ -1,0 +1,14 @@
+body {
+  @apply font-body text-body;
+  background-image: url("../dist/static/images/bg-newsletter.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+@screen lg {
+  html,
+  body {
+    height: 100%;
+  }
+}
